@@ -5,7 +5,7 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rcm-webdev.github.io/",
+  site: "https://elaborate-puffpuff-c601d1.netlify.app/",
   integrations: [tailwind()],
   output: "server",
   adapter: node({
