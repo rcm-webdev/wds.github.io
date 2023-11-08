@@ -1,0 +1,265 @@
+---
+import { Icon } from "astro-icon";
+
+import carIcon from "../../public/carwash.svg";
+import handIcon from "../../public/handwash.svg";
+import starIcon from "../../public/star.svg";
+import { Image } from "astro:assets";
+---
+
+<div class="custom-shape-divider-top-1699219024">
+  <svg
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1200 120"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+      class="fill-white"></path>
+  </svg>
+</div>
+
+<main id="pricing" class="px-2 lg:px-24 bg-indigo-100 py-24 sm:py-32">
+  <div class="max-w-md mx-auto mb-14 text-center">
+    <h1 class="text-4xl font-semibold mt-10 mb-6 lg:text-5xl">
+      <span class="text-indigo-600">Pricing</span>
+    </h1>
+    <p class="text-xl text-gray-500 font-medium">
+      Choose a package that works best for you.
+    </p>
+  </div>
+
+  <div
+    class="flex flex-col justify-between items-center lg:flex-row lg:items-start"
+  >
+    <div
+      class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none"
+    >
+      <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+        <Image src={carIcon} alt="" class="w-20 h-20" />
+        <div class="ml-5">
+          <span class="block text-2xl font-semibold">Base</span>
+          <span>
+            <span class="font-medium text-gray-500 text-xl align-top"
+              >$&thinsp;</span
+            ><span class="text-3xl font-bold">120</span></span
+          ><span class="text-gray-500 font-medium">/ automobile</span>
+        </div>
+      </div>
+      <ul class="mb-7 font-medium text-gray-500">
+        <li class="flex text-lg mb-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            ><path
+              fill="currentColor"
+              d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z"
+              class="opacity-80"></path></svg
+          >
+          <span class="ml-3"
+            >Complete <span class="text-black">hand washing</span></span
+          >
+        </li>
+        <li class="flex text-lg mb-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            ><path
+              fill="currentColor"
+              d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z"
+              class="opacity-80"></path></svg
+          >
+          <span class="ml-3"
+            >Removal of <span class="text-black">iron deposits</span></span
+          >
+        </li>
+        <li class="flex text-lg mb-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            ><path
+              fill="currentColor"
+              d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z"
+              class="opacity-80"></path></svg
+          >
+          <span class="ml-3"
+            ><span class="text-black">Detailed</span> tire wash</span
+          >
+        </li>
+        <li class="flex text-lg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            ><path
+              fill="currentColor"
+              d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z"
+              class="opacity-80"></path></svg
+          >
+          <span class="ml-3"
+            ><span class="text-black">Complete</span> wax/polish</span
+          >
+        </li>
+      </ul>
+      <a
+        href="#/"
+        class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl"
+      >
+        Pick Package
+        <img
+          src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+          class="ml-2"
+        />
+      </a>
+    </div>
+
+    <div
+      class="relative w-full flex-1 p-8 order-1 shadow-xl rounded-3xl border-2 border-yellow-400 bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0"
+    >
+      <p
+        class="absolute -top-5 left-[50%] translate-x-[-50%] text-center text-xl rounded-3xl py-2 px-3 lg:px-5 bg-yellow-400 text-gray-900"
+      >
+        Popular
+      </p>
+      <div class="mb-8 pb-8 flex items-center border-b border-gray-600">
+        <Image src={starIcon} alt="" class="w-20 h-20" />
+
+        <div class="ml-5">
+          <div class="flex flex-col lg:flex-row items-center lg:gap-32">
+            <span class="block text-3xl font-semibold text-white">Premium</span>
+            <div></div>
+          </div>
+          <span
+            ><span class="font-medium text-xl align-top">$&thinsp;</span><span
+              class="text-3xl font-bold text-white"
+              >650
+            </span></span
+          ><span class="font-medium">/ automobile</span>
+        </div>
+      </div>
+      <ul class="mb-10 font-medium text-xl">
+        <li class="flex mb-6">
+          <img
+            src="https://res.cloudinary.com/williamsondesign/check-white.svg"
+          />
+          <span class="ml-3"
+            >All services in <span class="text-white">Base</span></span
+          >
+        </li>
+        <li class="flex mb-6">
+          <img
+            src="https://res.cloudinary.com/williamsondesign/check-white.svg"
+          />
+          <span class="ml-3"
+            >Include <span class="text-white">interior package #5</span></span
+          >
+        </li>
+        <li class="flex">
+          <img
+            src="https://res.cloudinary.com/williamsondesign/check-white.svg"
+          />
+          <span class="ml-3"
+            ><span class="text-white">Spotless</span> treatment</span
+          >
+        </li>
+      </ul>
+      <a
+        href="#/"
+        class="flex justify-center items-center bg-indigo-600 rounded-xl py-6 px-4 text-center text-white text-2xl"
+      >
+        Pick Package
+        <img
+          src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+          class="ml-2"
+        />
+      </a>
+    </div>
+
+    <div
+      class="w-full flex-1 mt-8 p-8 order-3 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none"
+    >
+      <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+        <Image src={handIcon} alt="" class="w-20 h-20" />
+        <div class="ml-5">
+          <span class="block text-2xl font-semibold">Luxury</span>
+          <span
+            ><span class="font-medium text-gray-500 text-xl align-top"
+              >$&thinsp;</span
+            ><span class="text-3xl font-bold">2500</span></span
+          ><span class="text-gray-500 font-medium">/ automobile</span>
+        </div>
+      </div>
+      <ul class="mb-7 font-medium text-gray-500">
+        <li class="flex text-lg mb-2">
+          <img
+            src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+          />
+          <span class="ml-3"
+            >Includes <span class="text-black">washing package #5</span></span
+          >
+        </li>
+        <li class="flex text-lg mb-2">
+          <img
+            src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+          />
+          <span class="ml-3"
+            >Includes <span class="text-black">interior package #5</span></span
+          >
+        </li>
+        <li class="flex text-lg">
+          <img
+            src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+          />
+          <span class="ml-3"
+            ><span class="text-black">We offer</span> mobile auto detailing</span
+          >
+        </li>
+      </ul>
+      <a
+        href="#/"
+        class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl"
+      >
+        Get a Quote
+        <img
+          src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+          class="ml-2"
+        />
+      </a>
+    </div>
+  </div>
+  <div class="text-center mt-10 opacity-30">
+    <p>
+      *PRICES ARE ESTIMATED, PRICE MAY CHANGE BASED ON CONDITION OF VEHICLE AND
+      TIME NEEDED TO COMPLETE THE FULL SERVICE. ALL INTERIOR PACKAGES COME WITH
+      A FREE AIR FRESHENER.
+    </p>
+  </div>
+</main>
+
+<style>
+  .custom-shape-divider-top-1699219024 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1699219024 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+
+  /* .custom-shape-divider-top-1699219024 .shape-fill {
+    fill: #ffffff;
+  } */
+</style>

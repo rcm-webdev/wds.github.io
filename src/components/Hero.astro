@@ -1,0 +1,293 @@
+---
+import FiveStars from "./FiveStars.astro";
+import Avatar from "./Avatar.astro";
+---
+
+<main>
+  <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-20">
+      <nav
+        id="nav"
+        class="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <svg
+              id="logo-84"
+              width="40"
+              height="28"
+              viewBox="0 0 40 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path
+                class="h-8 w-auto text-indigo-600"
+                fill="currentColor"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.98578 4.11462L0 14C1.99734 15.9773 4.27899 17.6437 6.76664 18.9474C7.45424 20.753 8.53203 22.4463 10 23.8995C15.5229 29.3668 24.4772 29.3668 30 23.8995C31.468 22.4463 32.5458 20.753 33.2334 18.9473C35.721 17.6437 38.0027 15.9773 40 14L30.0223 4.12266C30.0149 4.11527 30.0075 4.10788 30 4.1005C24.4772 -1.36683 15.5229 -1.36683 10 4.1005C9.99527 4.10521 9.99052 4.10991 9.98578 4.11462ZM29.0445 20.7309C26.1345 21.7031 23.0797 22.201 20 22.201C16.9203 22.201 13.8656 21.7031 10.9556 20.7309C11.2709 21.145 11.619 21.5424 12 21.9196C16.4183 26.2935 23.5817 26.2935 28 21.9196C28.381 21.5424 28.7292 21.145 29.0445 20.7309ZM12.2051 5.8824C12.9554 6.37311 13.7532 6.79302 14.588 7.13536C16.3038 7.83892 18.1428 8.20104 20 8.20104C21.8572 8.20104 23.6962 7.83892 25.412 7.13536C26.2468 6.79302 27.0446 6.3731 27.795 5.88238C23.4318 1.77253 16.5682 1.77254 12.2051 5.8824Z"
+                fill="#3B4158"></path></svg
+            >
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            id="toggle-open"
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 rotate"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#about" class="text-sm font-semibold leading-6 text-gray-900"
+            >About</a
+          >
+          <a
+            href="#service"
+            class="text-sm font-semibold leading-6 text-gray-900">Services</a
+          >
+          <a
+            href="#process"
+            class="text-sm font-semibold leading-6 text-gray-900">Process</a
+          >
+          <!-- <a
+            href="#location"
+            class="text-sm font-semibold leading-6 text-gray-900">Location</a
+          > -->
+          <a
+            href="#testimonials"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Testimonials</a
+          >
+          <a href="#FAQ" class="text-sm font-semibold leading-6 text-gray-900"
+            >FAQ</a
+          >
+          <a
+            href="#pricing"
+            class="text-sm font-semibold leading-6 text-gray-900">Pricing</a
+          >
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a
+            href="#"
+            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >Join our waitlist</a
+          >
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div
+        id="mobile-nav"
+        class="hidden lg:hidden"
+        role="dialog"
+        aria-modal="true"
+      >
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <svg
+                id="logo-84"
+                width="40"
+                height="28"
+                viewBox="0 0 40 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  class="h-8 w-auto text-indigo-600"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.98578 4.11462L0 14C1.99734 15.9773 4.27899 17.6437 6.76664 18.9474C7.45424 20.753 8.53203 22.4463 10 23.8995C15.5229 29.3668 24.4772 29.3668 30 23.8995C31.468 22.4463 32.5458 20.753 33.2334 18.9473C35.721 17.6437 38.0027 15.9773 40 14L30.0223 4.12266C30.0149 4.11527 30.0075 4.10788 30 4.1005C24.4772 -1.36683 15.5229 -1.36683 10 4.1005C9.99527 4.10521 9.99052 4.10991 9.98578 4.11462ZM29.0445 20.7309C26.1345 21.7031 23.0797 22.201 20 22.201C16.9203 22.201 13.8656 21.7031 10.9556 20.7309C11.2709 21.145 11.619 21.5424 12 21.9196C16.4183 26.2935 23.5817 26.2935 28 21.9196C28.381 21.5424 28.7292 21.145 29.0445 20.7309ZM12.2051 5.8824C12.9554 6.37311 13.7532 6.79302 14.588 7.13536C16.3038 7.83892 18.1428 8.20104 20 8.20104C21.8572 8.20104 23.6962 7.83892 25.412 7.13536C26.2468 6.79302 27.0446 6.3731 27.795 5.88238C23.4318 1.77253 16.5682 1.77254 12.2051 5.8824Z"
+                  fill="#3B4158"></path></svg
+              >
+            </a>
+            <button
+              id="toggle-close"
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700 rotate"
+            >
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a
+                  href="#about"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >About</a
+                >
+                <a
+                  href="#service"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Services</a
+                >
+                <a
+                  href="#process"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Process</a
+                >
+                <!-- <a
+                  href="#location"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Location</a
+                > -->
+                <a
+                  href="#testimonials"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Testimonials</a
+                >
+                <a
+                  href="#FAQ"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >FAQ</a
+                >
+                <a
+                  href="#pricing"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Pricing</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="#"
+                  class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >Join our waitlist</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        >
+        </div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div
+            class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+          >
+            Limited Spots Available in 2024. <a
+              href="#"
+              class="font-semibold text-indigo-600"
+              ><span class="absolute inset-0" aria-hidden="true"></span>Read
+              more <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+        </div>
+        <div class="text-center">
+          <h1
+            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl uppercase"
+          >
+            Best <span class="text-indigo-600">Auto Detailing</span>
+            <br /> in Town
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
+          </p>
+          <div class="mt-10 mb-10 flex items-center justify-center gap-x-6">
+            <a
+              href="#"
+              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >Join our waitlist</a
+            >
+            <a
+              href="#process"
+              class="text-sm font-semibold leading-6 text-gray-900"
+              >Learn more <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="flex flex-col items-center">
+            <Avatar />
+            <FiveStars />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  // Get the button elements by ID
+  const closeButton = document.getElementById("toggle-close");
+  const openButton = document.getElementById("toggle-open");
+  const mobileNav = document.getElementById("mobile-nav");
+
+  // Create an array of the buttons
+  const buttons = [closeButton, openButton];
+
+  // Add a click event listener to toggle the "hidden" and "rotate" classes for each button
+  Array.from(buttons).map((button) => {
+    button &&
+      button.addEventListener("click", () => {
+        mobileNav && mobileNav.classList.toggle("hidden");
+      });
+  });
+
+  // Create an array of the menu links
+  const menuLinks = document.querySelectorAll("#mobile-nav a");
+
+  // Add a click event listener to each menu link
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (mobileNav) {
+        // Close the mobile menu
+        mobileNav.classList.add("hidden");
+      }
+
+      // Scroll to the selected section (use link's href attribute)
+      const targetId = link.getAttribute("href");
+      if (targetId) {
+        const targetElement = document.getElementById(targetId.substring(1)); // Remove the "#" symbol
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+  });
+</script>
