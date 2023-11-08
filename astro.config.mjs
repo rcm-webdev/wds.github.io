@@ -7,8 +7,4 @@ import node from "@astrojs/node";
 export default defineConfig({
   site: "https://elaborate-puffpuff-c601d1.netlify.app/",
   integrations: [tailwind()],
-  output: "server",
-  adapter: node({
-    mode: "standalone",
-  }),
 });
